@@ -6,11 +6,11 @@ Feature: Login feature
 
   Scenario Outline: Authentication  success
     Given I am on the main page
-    When I write "Lore" in the search field
+    When I write <search-text> in the search field
     Then I should see <model> model <brand> brand
     # And I should not see <model> model  <brand> brand
 
   Examples:
-  | model | brand  | no-present-model | no-present-brand |
-  | Lorem | Fhourd | Ipsum            | Banz             |
-  | Ipsum | Banz   | Lorem            | Fhourd           |
+  | search-text | model | brand  | no-present-model | no-present-brand |
+  | Lore        | Lorem | Fhourd | Ipsum            | Banz             |
+  | sum         | Ipsum | Banz   | Lorem            | Fhourd           |

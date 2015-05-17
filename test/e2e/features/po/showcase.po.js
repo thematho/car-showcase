@@ -5,7 +5,7 @@ var _ = require('lodash'),
 
 var ShowcasePageObject = function() {
 
-  var searchInput = element(by.css('.js-login-btn')),
+  var searchInput = element(by.css('.search__input')),
     carItemListSelector = '.car-list__item ';
 
   _.mixin(this, require('./common/base.js').Base);

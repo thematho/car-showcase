@@ -53,6 +53,6 @@
   },
   "scripts": {
     "test": "grunt test",
-    "install": "node ./node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
+    "e2e": "node ./node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   }
 }
