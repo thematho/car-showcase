@@ -33,7 +33,7 @@ angular.module('carShowcaseApp.services.carService', [])
 
   function getCarsFromJSON() {
     return $http
-      .get('/data.json?_=' + new Date().getTime(), {
+      .get('/data.json', {
         responseType: 'json'
       })
       .then(function(response) {

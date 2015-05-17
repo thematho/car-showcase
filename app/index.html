@@ -24,7 +24,6 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
           <li title="Github Sources">
             <a type="button" href="https://github.com/thematho/"
               class="btn">
@@ -32,7 +31,7 @@
             </a>
           </li>
           <li title="Stackoverflow profile">
-            <a type="button" href="stackoverflow.com/users/1769317/matho"
+            <a type="button" href="http://stackoverflow.com/users/1769317/matho"
               class="btn">
               <i class="fa fa-stack-overflow"></i>
             </a>
@@ -66,12 +65,10 @@
        ga('send', 'pageview');
     </script>
 
-    <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
     <![endif]-->
-    <!-- endbuild -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -97,8 +94,10 @@
         <script src="scripts/showcase/showcase.js"></script>
         <script src="scripts/showcase/showcase-controller.js"></script>
         <script src="scripts/common/services/services.js"></script>
+        <script src="scripts/common/services/car-detail-modal/car-detail-modal-service.js"></script>
         <script src="scripts/common/services/car-service/car-service.js"></script>
         <script src="scripts/common/directives/directives.js"></script>
+        <script src="scripts/common/directives/auto-focus/auto-focus.js"></script>
         <script src="scripts/common/directives/fixed-position/fixed-position.js"></script>
         <script src="scripts/common/directives/image-holder/image-holder.js"></script>
         <script src="scripts/common/directives/search-input/search-input.js"></script>
@@ -106,15 +105,15 @@
 
         <!-- Dev mocks modules-->
 
-        <!--(if target  mock || e2e)><!-->
         <!-- Add HERE the mocks Modules used during Dev's development-->
+        <!--(if target mock || e2e)><!-->
         <script src="dev-mocks/mock-utils.js"></script>
         <script src="dev-mocks/modules/url-parser-service.js"></script>
         <script src="dev-mocks/modules/car-service-mock.js"></script>
         <!--<!(endif)-->
 
-        <!--(if target mock)><!-->
         <!-- Add HERE the main MockModule-->
+        <!--(if target mock)><!-->
         <script src="dev-mocks/mocks-module-plugin.js"></script>
         <!--<!(endif)-->
 

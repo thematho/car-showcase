@@ -1,0 +1,17 @@
+
+
+.detail-image {
+  height: 25rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.detail-image__zoom-btn  {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.detail-image__zoom {
+  width: 100%;
+}

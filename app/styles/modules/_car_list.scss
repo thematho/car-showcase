@@ -13,9 +13,17 @@ $car-item-height: 12rem;
   overflow: hidden;
   opacity: 1;
   @include box-sizing(border-box);
-  @include transition(.3s opacity cubic-bezier(0.250, 0.250, 0.750, 0.750));
-  @include transition(.5s height .5s cubic-bezier(0.250, 0.250, 0.750, 0.750));
+  @include transition(
+    .3s background-color ease-in-out,
+    .3s color ease-in-out,
+    .3s opacity cubic-bezier(0.250, 0.250, 0.750, 0.750),
+    .5s height .5s cubic-bezier(0.250, 0.250, 0.750, 0.750)
+  );
 
+  &:hover {
+    @extend .btn-info;
+    cursor: pointer;
+  }
   // ng-animate for ng-repeat
   &.ng-enter,
   &.ng-leave {
@@ -33,6 +41,9 @@ $car-item-height: 12rem;
     height: 0rem;
   }
 
+  :last-child {
+    padding-top: 1rem;
+  }
   :not(:last-child) {
     padding-top: $car-item-height/3;
   }

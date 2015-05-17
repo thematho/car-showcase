@@ -13,6 +13,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "config/view_port";
 
  /* Own modules SCSS */
+@import "modules/car_detail";
 @import "modules/car_list";
 @import "modules/columns_info";
 @import "modules/image_holder";

@@ -1,0 +1,39 @@
+<div class="car-detail modal-content">
+  <div class="modal-header">
+    <h3 class="modal-title">Detail {{::car.brand}} - {{::car.model}}</h3>
+  </div>
+  <div class="modal-body text-center row">
+    <div class="detail-info col-sm4 col-xs-4">
+      <div class="detail-info__item">
+        <span class="label label-info col-xs-4 ">Model</span>
+        <span class="col-xs-8">{{::car.model}}</span>
+      </div>
+      <div class="detail-info__item">
+        <span class="label label-info col-xs-4">Year</span>
+        <span class="col-xs-8">{{::car.year}}</span>
+      </div>
+      <div class="detail-info__item">
+        <span class="label label-info col-xs-4">Brand</span>
+        <span class="col-xs-8">{{::car.brand}}</span>
+      </div>
+      <div class="detail-info__item">
+        <span class="label label-info col-xs-4">Price</span>
+        <span class="col-xs-8">{{::car.price | currency}}</span>
+      </div>
+    </div>
+    <div
+      class="detail-image col-sm-8 col-xs-8"
+      ng-click="showFullImage(car.imageUrl)">
+      <image-holder
+        class="car-detail__image img-thumbnail"
+        src="car.imageUrl">
+      </image-holder>
+      <div class="detail-image__zoom-btn btn btn-info">
+        <i class="fa fa-search-plus fa-2x"></i>
+        </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+      <button class="btn btn-primary" ng-click="close()">Close</button>
+  </div>
+</div>

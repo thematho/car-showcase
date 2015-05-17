@@ -11,7 +11,9 @@
  *
  */
 angular.module('carShowcaseApp.showcase')
-  .controller('ShowCaseCtrl', function($scope, carService) {
+  .controller('ShowCaseCtrl', function($scope,
+    carService,
+    carDetailModalService) {
 
     $scope.refresh = function getCars() {
       carService.getCarsFromJSON()
@@ -20,6 +22,7 @@ angular.module('carShowcaseApp.showcase')
         });
     };
 
+    $scope.openDetail = carDetailModalService.showModal;
 
     $scope.refresh();
   });

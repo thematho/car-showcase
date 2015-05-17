@@ -7,5 +7,6 @@
  */
 
 angular.module('carShowcaseApp.services', [
-  'carShowcaseApp.services.carService'
+  'carShowcaseApp.services.carService',
+  'carShowcaseApp.services.carDetailModalService'
   ]);

@@ -9,5 +9,6 @@
  */
 angular
   .module('carShowcaseApp.showcase', [
+    'carShowcaseApp.services.carDetailModalService',
     'carShowcaseApp.services.carService'
     ]);

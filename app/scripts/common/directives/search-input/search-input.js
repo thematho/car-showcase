@@ -1,18 +1,20 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name carShowcaseApp.directives.imageHolder:imageHolder
+ * @name carShowcaseApp.directives.searchInput:searchInput
  *
  * @description
- * This directive loads an image and shows it only if the image
- * could be loaded correctly
+ * This directive renders a search input field with clean buttton and ng-model
+ * binded to the search variable
  *
  * @example
  *  <search-input
  *    search-text="search"
  *  </image-holder>
  */
-angular.module('carShowcaseApp.directives.searchInput', [])
+angular.module('carShowcaseApp.directives.searchInput', [
+  'carShowcaseApp.directives.autoFocus'
+  ])
   .directive('searchInput', function() {
 
     return {

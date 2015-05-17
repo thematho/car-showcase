@@ -11,4 +11,4 @@
  */
 angular
   .module('carShowcaseApp')
-  .controller('AppCtrl', function($scope) {});
+  .controller('AppCtrl', function() {});

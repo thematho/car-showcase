@@ -1,11 +1,17 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name carShowcaseApp.directives.imageHolder:imageHolder
+ * @name carShowcaseApp.directives.fixedPosition:fixedPosition
  *
  * @description
  * This directive add the class 'fixed' on the element once the user
  * scrolls X distance
+ * @example
+ *  <tag
+ *    fixed-position
+ *    distance="100">
+ *  </tag>
+ *
  */
 angular.module('carShowcaseApp.directives.fixedPosition', [])
   .directive('fixedPosition', function($window) {
