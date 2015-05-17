@@ -1,0 +1,244 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json carshowcase@0.0.0 No description
+6 warn package.json carshowcase@0.0.0 No repository field.
+7 warn package.json carshowcase@0.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ 'D:\\Workspace\\car-showcase',
+9 verbose install   [ 'express',
+9 verbose install     'gzippo',
+9 verbose install     'grunt-protractor-runner',
+9 verbose install     'sugar-step',
+9 verbose install     'chai',
+9 verbose install     'grunt',
+9 verbose install     'grunt-autoprefixer',
+9 verbose install     'grunt-concurrent',
+9 verbose install     'grunt-contrib-clean',
+9 verbose install     'grunt-contrib-compass',
+9 verbose install     'grunt-contrib-concat',
+9 verbose install     'grunt-contrib-connect',
+9 verbose install     'grunt-contrib-copy',
+9 verbose install     'grunt-contrib-cssmin',
+9 verbose install     'grunt-contrib-htmlmin',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-filerev',
+9 verbose install     'grunt-google-cdn',
+9 verbose install     'grunt-html2js',
+9 verbose install     'grunt-newer',
+9 verbose install     'grunt-ng-annotate',
+9 verbose install     'grunt-svgmin',
+9 verbose install     'grunt-targethtml',
+9 verbose install     'grunt-usemin',
+9 verbose install     'grunt-wiredep',
+9 verbose install     'jshint-stylish',
+9 verbose install     'karma-chai',
+9 verbose install     'karma-chrome-launcher',
+9 verbose install     'karma-coverage',
+9 verbose install     'karma-junit-reporter',
+9 verbose install     'karma-mocha',
+9 verbose install     'karma-ng-html2js-preprocessor',
+9 verbose install     'karma-phantomjs-launcher',
+9 verbose install     'karma-sinon',
+9 verbose install     'load-grunt-tasks',
+9 verbose install     'lodash',
+9 verbose install     'mocha',
+9 verbose install     'q',
+9 verbose install     'sinon',
+9 verbose install     'time-grunt' ] ]
+10 info preinstall carshowcase@0.0.0
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping sugar-step@^0.1.0 D:\Workspace\car-showcase
+13 verbose already installed skipping chai@^2.3.0 D:\Workspace\car-showcase
+14 verbose already installed skipping grunt@^0.4.1 D:\Workspace\car-showcase
+15 verbose already installed skipping grunt-autoprefixer@^0.7.3 D:\Workspace\car-showcase
+16 verbose already installed skipping grunt-concurrent@^0.5.0 D:\Workspace\car-showcase
+17 verbose already installed skipping grunt-contrib-clean@^0.5.0 D:\Workspace\car-showcase
+18 verbose already installed skipping grunt-contrib-compass@^0.7.2 D:\Workspace\car-showcase
+19 verbose already installed skipping grunt-contrib-concat@^0.4.0 D:\Workspace\car-showcase
+20 verbose already installed skipping grunt-contrib-connect@^0.7.1 D:\Workspace\car-showcase
+21 verbose already installed skipping grunt-contrib-copy@^0.5.0 D:\Workspace\car-showcase
+22 verbose already installed skipping grunt-contrib-cssmin@^0.9.0 D:\Workspace\car-showcase
+23 verbose already installed skipping grunt-contrib-htmlmin@^0.3.0 D:\Workspace\car-showcase
+24 verbose already installed skipping grunt-contrib-jshint@^0.10.0 D:\Workspace\car-showcase
+25 verbose already installed skipping grunt-contrib-uglify@^0.4.0 D:\Workspace\car-showcase
+26 verbose already installed skipping grunt-contrib-watch@^0.6.1 D:\Workspace\car-showcase
+27 verbose already installed skipping grunt-filerev@^0.2.1 D:\Workspace\car-showcase
+28 verbose already installed skipping grunt-google-cdn@^0.4.0 D:\Workspace\car-showcase
+29 verbose already installed skipping grunt-html2js@^0.3.2 D:\Workspace\car-showcase
+30 verbose already installed skipping grunt-newer@^0.7.0 D:\Workspace\car-showcase
+31 verbose already installed skipping grunt-ng-annotate@^0.4.0 D:\Workspace\car-showcase
+32 verbose already installed skipping grunt-svgmin@^0.4.0 D:\Workspace\car-showcase
+33 verbose already installed skipping grunt-targethtml@^0.2.6 D:\Workspace\car-showcase
+34 verbose already installed skipping grunt-usemin@^2.1.1 D:\Workspace\car-showcase
+35 verbose already installed skipping grunt-wiredep@^1.7.0 D:\Workspace\car-showcase
+36 verbose already installed skipping jshint-stylish@^0.2.0 D:\Workspace\car-showcase
+37 verbose already installed skipping karma-chai@^0.1.0 D:\Workspace\car-showcase
+38 verbose already installed skipping karma-chrome-launcher@^0.1.12 D:\Workspace\car-showcase
+39 verbose already installed skipping karma-coverage@^0.3.1 D:\Workspace\car-showcase
+40 verbose already installed skipping karma-junit-reporter@^0.2.2 D:\Workspace\car-showcase
+41 verbose already installed skipping karma-mocha@^0.1.10 D:\Workspace\car-showcase
+42 verbose already installed skipping karma-ng-html2js-preprocessor@^0.1.2 D:\Workspace\car-showcase
+43 verbose already installed skipping karma-phantomjs-launcher@^0.1.4 D:\Workspace\car-showcase
+44 verbose already installed skipping karma-sinon@^1.0.4 D:\Workspace\car-showcase
+45 verbose already installed skipping load-grunt-tasks@^0.4.0 D:\Workspace\car-showcase
+46 verbose already installed skipping lodash@^3.8.0 D:\Workspace\car-showcase
+47 verbose already installed skipping mocha@^2.2.5 D:\Workspace\car-showcase
+48 verbose already installed skipping q@^1.4.0 D:\Workspace\car-showcase
+49 verbose already installed skipping sinon@^1.14.1 D:\Workspace\car-showcase
+50 verbose already installed skipping time-grunt@^0.3.1 D:\Workspace\car-showcase
+51 verbose already installed skipping express@^4.12.3 D:\Workspace\car-showcase
+52 verbose already installed skipping gzippo@^0.2.0 D:\Workspace\car-showcase
+53 verbose already installed skipping grunt-protractor-runner@^2.0.0 D:\Workspace\car-showcase
+54 silly resolved []
+55 info build D:\Workspace\car-showcase
+56 verbose linkStuff [ false, false, false, 'D:\\Workspace' ]
+57 info linkStuff carshowcase@0.0.0
+58 verbose linkBins carshowcase@0.0.0
+59 verbose linkMans carshowcase@0.0.0
+60 verbose rebuildBundles carshowcase@0.0.0
+61 verbose rebuildBundles [ '.bin',
+61 verbose rebuildBundles   'chai',
+61 verbose rebuildBundles   'express',
+61 verbose rebuildBundles   'grunt',
+61 verbose rebuildBundles   'grunt-autoprefixer',
+61 verbose rebuildBundles   'grunt-concurrent',
+61 verbose rebuildBundles   'grunt-contrib-clean',
+61 verbose rebuildBundles   'grunt-contrib-compass',
+61 verbose rebuildBundles   'grunt-contrib-concat',
+61 verbose rebuildBundles   'grunt-contrib-connect',
+61 verbose rebuildBundles   'grunt-contrib-copy',
+61 verbose rebuildBundles   'grunt-contrib-cssmin',
+61 verbose rebuildBundles   'grunt-contrib-htmlmin',
+61 verbose rebuildBundles   'grunt-contrib-jshint',
+61 verbose rebuildBundles   'grunt-contrib-uglify',
+61 verbose rebuildBundles   'grunt-contrib-watch',
+61 verbose rebuildBundles   'grunt-filerev',
+61 verbose rebuildBundles   'grunt-google-cdn',
+61 verbose rebuildBundles   'grunt-html2js',
+61 verbose rebuildBundles   'grunt-karma',
+61 verbose rebuildBundles   'grunt-newer',
+61 verbose rebuildBundles   'grunt-ng-annotate',
+61 verbose rebuildBundles   'grunt-protractor-runner',
+61 verbose rebuildBundles   'grunt-svgmin',
+61 verbose rebuildBundles   'grunt-targethtml',
+61 verbose rebuildBundles   'grunt-usemin',
+61 verbose rebuildBundles   'grunt-wiredep',
+61 verbose rebuildBundles   'gzippo',
+61 verbose rebuildBundles   'jasmine-core',
+61 verbose rebuildBundles   'jshint-stylish',
+61 verbose rebuildBundles   'karma',
+61 verbose rebuildBundles   'karma-chai',
+61 verbose rebuildBundles   'karma-chrome-launcher',
+61 verbose rebuildBundles   'karma-coverage',
+61 verbose rebuildBundles   'karma-jasmine',
+61 verbose rebuildBundles   'karma-junit-reporter',
+61 verbose rebuildBundles   'karma-mocha',
+61 verbose rebuildBundles   'karma-ng-html2js-preprocessor',
+61 verbose rebuildBundles   'karma-phantomjs-launcher',
+61 verbose rebuildBundles   'karma-sinon',
+61 verbose rebuildBundles   'load-grunt-tasks',
+61 verbose rebuildBundles   'lodash',
+61 verbose rebuildBundles   'mocha',
+61 verbose rebuildBundles   'q',
+61 verbose rebuildBundles   'sinon',
+61 verbose rebuildBundles   'sugar-step',
+61 verbose rebuildBundles   'time-grunt' ]
+62 verbose rebuild bundle D:\Workspace\car-showcase\node_modules\grunt-karma
+63 info build D:\Workspace\car-showcase\node_modules\grunt-karma
+64 info preinstall grunt-karma@0.10.1
+65 verbose linkStuff [ false,
+65 verbose linkStuff   false,
+65 verbose linkStuff   false,
+65 verbose linkStuff   'D:\\Workspace\\car-showcase\\node_modules' ]
+66 info linkStuff grunt-karma@0.10.1
+67 verbose linkBins grunt-karma@0.10.1
+68 verbose linkMans grunt-karma@0.10.1
+69 verbose rebuildBundles grunt-karma@0.10.1
+70 verbose rebuildBundles [ 'lodash' ]
+71 info install grunt-karma@0.10.1
+72 info postinstall grunt-karma@0.10.1
+73 verbose rebuild bundle D:\Workspace\car-showcase\node_modules\jasmine-core
+74 info build D:\Workspace\car-showcase\node_modules\jasmine-core
+75 info preinstall jasmine-core@2.3.4
+76 verbose linkStuff [ false,
+76 verbose linkStuff   false,
+76 verbose linkStuff   false,
+76 verbose linkStuff   'D:\\Workspace\\car-showcase\\node_modules' ]
+77 info linkStuff jasmine-core@2.3.4
+78 verbose linkBins jasmine-core@2.3.4
+79 verbose linkMans jasmine-core@2.3.4
+80 verbose rebuildBundles jasmine-core@2.3.4
+81 info install jasmine-core@2.3.4
+82 info postinstall jasmine-core@2.3.4
+83 verbose rebuild bundle D:\Workspace\car-showcase\node_modules\karma
+84 info build D:\Workspace\car-showcase\node_modules\karma
+85 info preinstall karma@0.12.31
+86 verbose linkStuff [ false,
+86 verbose linkStuff   false,
+86 verbose linkStuff   false,
+86 verbose linkStuff   'D:\\Workspace\\car-showcase\\node_modules' ]
+87 info linkStuff karma@0.12.31
+88 verbose linkBins karma@0.12.31
+89 verbose link bins [ {}, 'D:\\Workspace\\car-showcase\\node_modules\\.bin', false ]
+90 verbose linkMans karma@0.12.31
+91 verbose rebuildBundles karma@0.12.31
+92 verbose rebuildBundles [ '.bin',
+92 verbose rebuildBundles   'chokidar',
+92 verbose rebuildBundles   'colors',
+92 verbose rebuildBundles   'connect',
+92 verbose rebuildBundles   'di',
+92 verbose rebuildBundles   'glob',
+92 verbose rebuildBundles   'graceful-fs',
+92 verbose rebuildBundles   'http-proxy',
+92 verbose rebuildBundles   'lodash',
+92 verbose rebuildBundles   'log4js',
+92 verbose rebuildBundles   'mime',
+92 verbose rebuildBundles   'minimatch',
+92 verbose rebuildBundles   'optimist',
+92 verbose rebuildBundles   'q',
+92 verbose rebuildBundles   'rimraf',
+92 verbose rebuildBundles   'socket.io',
+92 verbose rebuildBundles   'source-map',
+92 verbose rebuildBundles   'useragent' ]
+93 info install karma@0.12.31
+94 info postinstall karma@0.12.31
+95 verbose rebuild bundle D:\Workspace\car-showcase\node_modules\karma-jasmine
+96 info build D:\Workspace\car-showcase\node_modules\karma-jasmine
+97 info preinstall karma-jasmine@0.3.5
+98 verbose linkStuff [ false,
+98 verbose linkStuff   false,
+98 verbose linkStuff   false,
+98 verbose linkStuff   'D:\\Workspace\\car-showcase\\node_modules' ]
+99 info linkStuff karma-jasmine@0.3.5
+100 verbose linkBins karma-jasmine@0.3.5
+101 verbose linkMans karma-jasmine@0.3.5
+102 verbose rebuildBundles karma-jasmine@0.3.5
+103 info install karma-jasmine@0.3.5
+104 info postinstall karma-jasmine@0.3.5
+105 info install carshowcase@0.0.0
+106 verbose unsafe-perm in lifecycle true
+107 info carshowcase@0.0.0 Failed to exec install script
+108 error carshowcase@0.0.0 install: `node ./node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update`
+108 error Exit status 8
+109 error Failed at the carshowcase@0.0.0 install script.
+109 error This is most likely a problem with the carshowcase package,
+109 error not with npm itself.
+109 error Tell the author that this fails on your system:
+109 error     node ./node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
+109 error You can get their info via:
+109 error     npm owner ls carshowcase
+109 error There is likely additional logging output above.
+110 error System Windows_NT 6.2.9200
+111 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+112 error cwd D:\Workspace\car-showcase
+113 error node -v v0.10.33
+114 error npm -v 1.4.28
+115 error code ELIFECYCLE
+116 verbose exit [ 1, true ]
