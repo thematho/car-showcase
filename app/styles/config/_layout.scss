@@ -1,0 +1,43 @@
+.header{
+  padding: 1.5rem;
+}
+
+.content {
+
+}
+.container {
+  padding: 0;
+}
+
+.footer {
+
+}
+.panel-heading.fixed {
+  @extend .navbar-fixed-top;
+}
+.center-block {
+  position: relative;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.center-element {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.center-text {
+  text-align: center;
+}
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}

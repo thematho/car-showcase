@@ -1,0 +1,46 @@
+@import "compass/css3/transition";
+@import "compass/css3/box-sizing";
+
+$car-item-height: 12rem;
+
+.car-list {
+  list-style: none;
+  padding: 0;
+}
+
+.car-list__item {
+  height: $car-item-height;
+  overflow: hidden;
+  opacity: 1;
+  @include box-sizing(border-box);
+  @include transition(.3s opacity cubic-bezier(0.250, 0.250, 0.750, 0.750));
+  @include transition(.5s height .5s cubic-bezier(0.250, 0.250, 0.750, 0.750));
+
+  // ng-animate for ng-repeat
+  &.ng-enter,
+  &.ng-leave {
+  }
+
+  &.ng-enter.ng-enter-active,
+  &.ng-leave {
+    opacity: 1;
+    height: $car-item-height;
+  }
+
+  &.ng-leave.ng-leave-active,
+  &.ng-enter {
+    opacity: 0;
+    height: 0rem;
+  }
+
+  :not(:last-child) {
+    padding-top: $car-item-height/3;
+  }
+
+}
+
+.car-item__image {
+  height: 10rem;
+}
+
+

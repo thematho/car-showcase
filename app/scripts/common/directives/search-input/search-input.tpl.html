@@ -1,0 +1,17 @@
+<div>
+  <div class="input-group">
+    <span class="search__addon input-group-addon hidden-xs">
+      <i class="fa fa-search"></i>
+    </span>
+    <input type="text"
+      placeholder="Search model"
+      class="search__input form-control"
+      ng-model="searchText"
+      ng-model-options="{debounce: 200}">
+    <span
+      class="search__clean  btn btn-default input-group-addon"
+      ng-click="cleanSearch()">
+      <i class="fa fa-remove"></i>
+    </span>
+  </div>
+</div>

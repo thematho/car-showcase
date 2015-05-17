@@ -1,0 +1,43 @@
+<div class="panel panel-default">
+  <div class="panel-heading"
+    fixed-position
+    distance="86">
+    <div class="row">
+      <search-input
+        ng-model="search"
+        search-text="search"
+        class="search-bar col-sm-10 col-xs-8">
+      </search-input>
+      <a type="button"
+        href="#"
+        class="btn btn-primary col-sm-1 col-xs-4"
+        ng-click="refresh()">
+          <i class="fa fa-refresh"></i>
+      </a>
+    </div>
+  </div>
+  <ul class="car-list">
+    <li class="columns-info bg-primary h2 center-text row">
+      <div class="columns-info__item col-sm-2 col-xs-4">Model</div>
+      <div class="columns-info__item col-sm-2 col-xs-1 hidden-xs">Year</div>
+      <div class="columns-info__item col-sm-2 col-xs-4">Brand</div>
+      <div class="columns-info__item col-sm-2 col-xs-1 hidden-xs">Price</div>
+      <div class="columns-info__item col-sm-4 col-xs-4">Image</div>
+    </li>
+    <li
+      class="car-list__item center-text"
+      ng-animate=""
+      ng-repeat="car in carList | orderBy: 'model' | filter: {model: search}">
+        <div class="col-sm-2 col-xs-4">{{::car.model}}</div>
+        <div class="col-sm-2 hidden-xs">{{::car.year}}</div>
+        <div class="col-sm-2 col-xs-4">{{::car.brand}}</div>
+        <div class="col-sm-2 hidden-xs">{{::car.price}}</div>
+        <div class="col-sm-4 col-xs-4 car-item__image">
+          <image-holder
+            class="img-thumbnail"
+            src="car.imageUrl">
+          </image-holder>
+        </div>
+      </li>
+  </ul>
+</div>
