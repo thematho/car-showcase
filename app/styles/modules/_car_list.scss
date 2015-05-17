@@ -42,7 +42,7 @@ $car-item-height: 12rem;
   }
 
   :last-child {
-    padding-top: 1rem;
+    margin-top: .5rem;
   }
   :not(:last-child) {
     padding-top: $car-item-height/3;
