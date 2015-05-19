@@ -24,6 +24,11 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
+          <li>
+            <a class="btn btn-primary"
+              type="button" href="#"
+              ui-sref="showcase">Home</a>
+          </li>
           <li title="Github Sources">
             <a type="button" href="https://github.com/thematho/"
               class="btn">
@@ -90,14 +95,20 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="templates/templates.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/app-constants.js"></script>
         <script src="scripts/app-controller.js"></script>
         <script src="scripts/showcase/showcase.js"></script>
         <script src="scripts/showcase/showcase-controller.js"></script>
+        <script src="scripts/compare/compare.js"></script>
+        <script src="scripts/compare/compare-controller.js"></script>
         <script src="scripts/common/services/services.js"></script>
+        <script src="scripts/common/services/filters/filters.js"></script>
         <script src="scripts/common/services/car-detail-modal/car-detail-modal-service.js"></script>
         <script src="scripts/common/services/car-service/car-service.js"></script>
+        <script src="scripts/common/services/compare-list-service/compare-list-service.js"></script>
         <script src="scripts/common/directives/directives.js"></script>
         <script src="scripts/common/directives/auto-focus/auto-focus.js"></script>
+        <script src="scripts/common/directives/compare-list-btn/compare-list-btn.js"></script>
         <script src="scripts/common/directives/fixed-position/fixed-position.js"></script>
         <script src="scripts/common/directives/image-holder/image-holder.js"></script>
         <script src="scripts/common/directives/search-input/search-input.js"></script>

@@ -1,0 +1,38 @@
+.compare-list-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.list__dropdown__item {
+  cursor: pointer;
+}
+
+.compare-list-header {
+  &:not(:last-child) {
+    border-right: solid 1px;
+  }
+}
+.compare-body  {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.compare-list {
+  margin: 0;
+}
+.compare-list__dropdown__item {
+  a {
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+.compare-list__item-row {
+  @extend .list-group-item-info;
+}
+
+.compare-list__item-cell--image {
+  height: 10rem;
+  cursor: pointer;
+}

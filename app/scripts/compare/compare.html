@@ -1,0 +1,41 @@
+<div class="panel panel-default">
+  <div class="panel-heading pal"
+    fixed-position
+    distance="86">
+    <div class="compare-list-headers bg-primary h2 center-text row">
+      <div class="compare-list-header"
+        ng-class="{'col-xs-4': compareList.length ===2,
+        'col-xs-3': compareList.length === 3}">
+        Attribute</div>
+      <div
+        class="compare-list-header"
+        ng-repeat="item in ::compareList"
+        ng-class="{'col-xs-4': compareList.length ===2,
+        'col-xs-3': compareList.length === 3}">
+        {{::item.model}}</div>
+    </div>
+  </div>
+  <div class="compare-body panel-body">
+    <ul class="compare-list list-group">
+      <li class="compare-list__item-row list-group-item row" ng-repeat="(key, value) in ::compareList[0]">
+        <div ng-class="{'col-xs-4': compareList.length ===2,
+          'col-xs-3': compareList.length === 3}"><b>{{::key | capitalize }}</b></div>
+        <div class="compare-list__item-cell"
+          ng-repeat="item in ::compareList"
+          ng-class="{'col-xs-4': compareList.length ===2,
+          'col-xs-3': compareList.length === 3}">
+            <div ng-if="key !=='price' && key !== 'imageUrl'">{{::item[key]}}</div>
+            <div ng-if="key ==='price'">{{::item[key] | currency}}</div>
+            <div ng-if="key ==='imageUrl'"
+              class="compare-list__item-cell--image"
+              ng-click="openImageModal(item)">
+              <image-holder
+                  class="img-thumbnail"
+                  src="item[key]">
+              </image-holder>
+            </div>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>

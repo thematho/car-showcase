@@ -1,0 +1,31 @@
+<div class="btn-group">
+  <div class="btn btn-default"
+    ng-disabled="!compareList.length || compareList.length < 2"
+    ng-class="{'disabled': !compareList.length}">
+    <span class="fa fa-list-ul"></span>
+    <span ng-if="!compareList.length">Compare list empty</span>
+    <span ng-if="compareList.length">
+      <a ui-sref="compare({'compareList': compareList})">Compare now ({{compareList.length}})</a>
+    </span>
+  </div>
+  <div class="btn btn-default dropdown-toggle"
+    title="Show comparison list"
+    ng-class="{'disabled': !compareList.length}"
+    data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </div>
+  <ul class="dropdown-menu" role="menu">
+    <li class="compare-list__dropdown__item"
+      title="Remove item"
+      ng-repeat="item in compareList"
+      ng-click="removeItem(item)">
+      <a href="#">
+        <span class="fa fa-remove"></span>
+        <span >{{item.model}} - {{::item.brand}}</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li ng-class="{'disabled': !compareList.length}"><a href="#" ng-click="cleanList()">Clean list</a></li>
+  </ul>
+</div>

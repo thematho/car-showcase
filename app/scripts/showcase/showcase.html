@@ -14,6 +14,12 @@
           <i class="fa fa-refresh"></i>
       </a>
     </div>
+    <div class="row">
+      <compare-list-btn
+        compare-list="compareList"
+        class="col-xs-12">
+      </compare-list-btn>
+    </div>
   </div>
   <ul class="car-list fixed-sibling">
     <li class="columns-info bg-primary h2 center-text row">
@@ -26,6 +32,7 @@
     <li
       ng-click="openDetail(car)"
       class="car-list__item center-text"
+      ng-class="{'bg-warning': isInCompareList(car)}"
       ng-animate=""
       ng-repeat="car in carList | orderBy: 'model' | filter: {model: search}">
         <div class="col-sm-2 col-xs-4">{{::car.model}}</div>

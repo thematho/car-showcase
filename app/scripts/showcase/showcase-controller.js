@@ -13,7 +13,12 @@
 angular.module('carShowcaseApp.showcase')
   .controller('ShowCaseCtrl', function($scope,
     carService,
-    carDetailModalService) {
+    carDetailModalService,
+    compareListService) {
+
+    $scope.compareList = compareListService.compareList;
+
+    $scope.isInCompareList = compareListService.isInList;
 
     $scope.refresh = function getCars() {
       carService.getCarsFromJSON()
@@ -22,7 +27,11 @@ angular.module('carShowcaseApp.showcase')
         });
     };
 
-    $scope.openDetail = carDetailModalService.showModal;
+    $scope.openDetail = function(car) {
+      var modalInstance = carDetailModalService.showModal(car);
+      modalInstance.result
+        .finally(function() {});
+    };
 
     $scope.refresh();
   });
